@@ -1,3 +1,9 @@
+/*
+Package main implements the plugin's executable.
+
+The nop plugin has empty implementations for all plugin
+hooks available. It is meant for testing purposes.
+*/
 package main
 
 import (
@@ -5,5 +11,5 @@ import (
 )
 
 func main() {
-	plugin.ClientMain(&Plugin{})
+	plugin.ClientMain(&NopPlugin{})
 }
